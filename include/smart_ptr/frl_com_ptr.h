@@ -2,7 +2,7 @@
 #define frl_smart_ptr_owner_com_h_
 #include "frl_types.h"
 #include "frl_exception.h"
-#include <boost/detail/shared_count.hpp>
+#include <boost/shared_ptr.hpp>
 
 namespace frl
 {
