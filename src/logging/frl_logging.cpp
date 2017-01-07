@@ -95,7 +95,7 @@ LogProxy::LogProxy( frl::logging::Logger &log, frl::logging::LogParameter &param
 
 LogProxy::LogProxy( const LogProxy &other ) : dest( other.dest ), param( other.param )
 {
-	ss << other.ss;
+	ss << other.ss.str();
 }
 
 LogProxy::~LogProxy()
