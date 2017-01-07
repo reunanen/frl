@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1AEA2503-165B-4E84-A456-D56E64B22B35}</ProjectGuid>
+    <RootNamespace>frl_lib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\output\frl_lib\</OutDir>
+    <IntDir>..\..\..\output\frl_lib\obj\$(Configuration)\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\..\..\output\frl_lib\</OutDir>
+    <IntDir>$(SolutionDir)\..\..\output\frl_lib\obj\$(Configuration)\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FRL_LIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DisableSpecificWarnings>4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)frl_d.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FRL_LIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)frl.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\console_std\frl_iostream.cpp" />
+    <ClCompile Include="..\..\..\src\frl_exception.cpp" />
+    <ClCompile Include="..\..\..\src\frl_string.cpp" />
+    <ClCompile Include="..\..\..\src\io\comm_ports\frl_comm_ports_serial.cpp" />
+    <ClCompile Include="..\..\..\src\io\comm_ports\frl_comm_ports_serial_fn_win32.cpp" />
+    <ClCompile Include="..\..\..\src\io\fs\frl_fs_fn_linux.cpp" />
+    <ClCompile Include="..\..\..\src\io\fs\frl_fs_fn_win32.cpp" />
+    <ClCompile Include="..\..\..\src\logging\frl_logging.cpp" />
+    <ClCompile Include="..\..\..\src\logging\frl_logging_elements.cpp" />
+    <ClCompile Include="..\..\..\src\logging\frl_logging_writers.cpp" />
+    <ClCompile Include="..\..\..\src\opc\address_space\frl_opc_address_space.cpp" />
+    <ClCompile Include="..\..\..\src\opc\address_space\frl_opc_addr_space_crawler.cpp" />
+    <ClCompile Include="..\..\..\src\opc\address_space\frl_opc_tag.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_async_request.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_connection_point.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_connection_point_container.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_da_server.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_enum_connection_points.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_enum_group.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_enum_string.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_event.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group_base.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group_item.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group_manager.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_item_attributes.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_item_hvqt.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_request_manager.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_base.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_factory.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_kind.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_type.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_types.cpp" />
+    <ClCompile Include="..\..\..\src\opc\frl_opc_util.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_enum_item_attributes.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_async_io.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_browse.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_browse_server_address_space.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_common.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_group_state_mgt.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_deadband_mgt.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_io.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_mgt.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_properties.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_server.cpp" />
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_sync_io.cpp" />
+    <ClCompile Include="..\..\..\src\os\win32\com\frl_os_win32_com_allocator.cpp" />
+    <ClCompile Include="..\..\..\src\os\win32\com\frl_os_win32_com_variant.cpp" />
+    <ClCompile Include="..\..\..\src\os\win32\registry\frl_registry_Key.cpp" />
+    <ClCompile Include="..\..\..\src\os\win32\registry\frl_registry_RootKey.cpp" />
+    <ClCompile Include="..\..\..\src\os\win32\registry\frl_registry_RootKeys.cpp" />
+    <ClCompile Include="..\..\..\src\poor_xml\frl_poor_xml_document.cpp" />
+    <ClCompile Include="..\..\..\src\poor_xml\frl_poor_xml_node.cpp" />
+    <ClCompile Include="..\..\..\src\poor_xml\frl_poor_xml_parser.cpp" />
+    <ClCompile Include="..\..\..\src\sys\frl_sys_util.cpp" />
+    <ClCompile Include="..\..\..\src\time\frl_time_sys_time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\console_std\frl_iostream.h" />
+    <ClInclude Include="..\..\..\include\frl_config.h" />
+    <ClInclude Include="..\..\..\include\frl_empty_type.h" />
+    <ClInclude Include="..\..\..\include\frl_exception.h" />
+    <ClInclude Include="..\..\..\include\frl_int_to_type.h" />
+    <ClInclude Include="..\..\..\include\frl_io.h" />
+    <ClInclude Include="..\..\..\include\frl_lexical_cast.h" />
+    <ClInclude Include="..\..\..\include\frl_null_type.h" />
+    <ClInclude Include="..\..\..\include\frl_opc.h" />
+    <ClInclude Include="..\..\..\include\frl_platform.h" />
+    <ClInclude Include="..\..\..\include\frl_select.h" />
+    <ClInclude Include="..\..\..\include\frl_singleton.h" />
+    <ClInclude Include="..\..\..\include\frl_smart_ptr.h" />
+    <ClInclude Include="..\..\..\include\frl_string.h" />
+    <ClInclude Include="..\..\..\include\frl_types.h" />
+    <ClInclude Include="..\..\..\include\frl_type_to_type.h" />
+    <ClInclude Include="..\..\..\include\io\comm_ports\frl_comm_ports_serial.h" />
+    <ClInclude Include="..\..\..\include\io\comm_ports\frl_comm_ports_serial_fh.h" />
+    <ClInclude Include="..\..\..\include\io\fs\frl_fs_fn.h" />
+    <ClInclude Include="..\..\..\include\logging\frl_logging.h" />
+    <ClInclude Include="..\..\..\include\logging\frl_logging_elements.h" />
+    <ClInclude Include="..\..\..\include\logging\frl_logging_writers.h" />
+    <ClInclude Include="..\..\..\include\opc\address_space\frl_opc_address_space.h" />
+    <ClInclude Include="..\..\..\include\opc\address_space\frl_opc_addr_space_crawler.h" />
+    <ClInclude Include="..\..\..\include\opc\address_space\frl_opc_tag.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_async_request.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_connection_point.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_connection_point_container.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_da_server.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_enum_connection_points.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_enum_group.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_enum_string.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_event.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group_base.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group_item.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group_manager.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_item_attributes.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_item_hvqt.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_request_manager.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_base.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_factory.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_kind.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_type.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_types.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_serv_handle_counter.h" />
+    <ClInclude Include="..\..\..\include\opc\frl_opc_util.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_enum_item_attributes.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_async_io.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_browse.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_browse_server_address_space.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_common.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_group_state_mgt.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_deadband_mgt.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_io.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_mgt.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_properties.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_server.h" />
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_sync_io.h" />
+    <ClInclude Include="..\..\..\include\os\win32\com\frl_os_win32_com_allocator.h" />
+    <ClInclude Include="..\..\..\include\os\win32\com\frl_os_win32_com_uuidof.h" />
+    <ClInclude Include="..\..\..\include\os\win32\com\frl_os_win32_com_variant.h" />
+    <ClInclude Include="..\..\..\include\os\win32\registry\frl_registry_Key.h" />
+    <ClInclude Include="..\..\..\include\os\win32\registry\frl_registry_RootKey.h" />
+    <ClInclude Include="..\..\..\include\os\win32\registry\frl_registry_RootKeys.h" />
+    <ClInclude Include="..\..\..\include\poor_xml\frl_poor_xml_document.h" />
+    <ClInclude Include="..\..\..\include\poor_xml\frl_poor_xml_node.h" />
+    <ClInclude Include="..\..\..\include\poor_xml\frl_poor_xml_parser.h" />
+    <ClInclude Include="..\..\..\include\smart_ptr\frl_com_ptr.h" />
+    <ClInclude Include="..\..\..\include\stream_std\frl_fstream.h" />
+    <ClInclude Include="..\..\..\include\stream_std\frl_ios.h" />
+    <ClInclude Include="..\..\..\include\stream_std\frl_istream.h" />
+    <ClInclude Include="..\..\..\include\stream_std\frl_ostream.h" />
+    <ClInclude Include="..\..\..\include\stream_std\frl_sstream.h" />
+    <ClInclude Include="..\..\..\include\stream_std\frl_streambuf.h" />
+    <ClInclude Include="..\..\..\include\sys\frl_sys_util.h" />
+    <ClInclude Include="..\..\..\include\time\frl_time_sys_time.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

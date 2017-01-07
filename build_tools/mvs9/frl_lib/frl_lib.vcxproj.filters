@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\console_std">
+      <UniqueIdentifier>{6bc2cde2-fcec-4b35-afd5-7b6023f4bd0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opc">
+      <UniqueIdentifier>{84525905-26ba-42b9-b4b9-9f2da8c7c444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opc\address_space">
+      <UniqueIdentifier>{e194937e-bfea-4edc-81e8-efc54898d787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opc\impl">
+      <UniqueIdentifier>{3535ccd8-2700-4d5b-9c3e-ea6000072f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sys">
+      <UniqueIdentifier>{e29135c4-9d68-49e3-8302-f462de2aff7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os">
+      <UniqueIdentifier>{2502508f-ac28-4699-86c4-b1a258179517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\win32">
+      <UniqueIdentifier>{7493ead5-19ec-4507-aa46-b21429ede43d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\win32\registry">
+      <UniqueIdentifier>{89fc0480-5029-4038-9e8e-cbb8dfa20bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\win32\com">
+      <UniqueIdentifier>{52df2c11-9ea9-4cc1-9b12-2b6180ed0cce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\io">
+      <UniqueIdentifier>{46e850ba-4801-4481-b9c8-0ad4a293adf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\io\fs">
+      <UniqueIdentifier>{8370e872-a093-4802-8546-c7bf22a926b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\io\comm_ports">
+      <UniqueIdentifier>{71314cf9-3f4e-459c-a590-5af4e2965aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\poor_xml">
+      <UniqueIdentifier>{ab165a64-75ab-425a-9966-f970ad0fd902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\time">
+      <UniqueIdentifier>{3a07bb21-2c4d-4456-a0da-9e641191a04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\logging">
+      <UniqueIdentifier>{e2c78cbd-eba6-40b4-889f-d4692da9b274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\stream_std">
+      <UniqueIdentifier>{60793ab2-bf11-4c10-a2b2-5936a82891d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\console_std">
+      <UniqueIdentifier>{083838c3-0d9e-4cb0-aeba-14da6a0023d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opc">
+      <UniqueIdentifier>{f2a9c8a0-cd78-4b69-b58b-cef558b311f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opc\address_space">
+      <UniqueIdentifier>{f7b331d9-71ed-4894-8c2d-793099c2de1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opc\impl">
+      <UniqueIdentifier>{8126e9ee-2f1c-43e2-a76c-4322bfb3a9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sys">
+      <UniqueIdentifier>{371c8462-0f2f-4675-9cd5-6059a710f355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\os">
+      <UniqueIdentifier>{339eeedf-00c2-444a-b02f-f2e66dc38c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\os\win32">
+      <UniqueIdentifier>{987381f3-c87a-484f-a26b-e99e64cd7d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\os\win32\com">
+      <UniqueIdentifier>{4b1a6fe4-85ef-4bac-95a8-06b243393a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\os\win32\registry">
+      <UniqueIdentifier>{988a52d6-a67b-45cf-b7e9-1adbfae347e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\io">
+      <UniqueIdentifier>{923e298b-1946-42ac-b490-0ba68f05db33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\io\fs">
+      <UniqueIdentifier>{9ab9ffd2-1286-4096-87af-b7804738ed7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\io\comm_ports">
+      <UniqueIdentifier>{db11748a-de8c-4830-96a2-a4469fd4db47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\poor_xml">
+      <UniqueIdentifier>{0d89ff41-315a-4ad7-8b02-a199e056097b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\time">
+      <UniqueIdentifier>{457df5e2-4034-4024-8ec7-3a9769ebc4d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\logging">
+      <UniqueIdentifier>{f79d8e72-d23f-41c9-85da-3001c1d026b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\smart_ptr">
+      <UniqueIdentifier>{98da6f0b-224d-4179-9c42-0f1021dccba4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\frl_exception.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\frl_string.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\console_std\frl_iostream.cpp">
+      <Filter>src\console_std</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_async_request.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_connection_point.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_connection_point_container.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_da_server.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_enum_connection_points.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_enum_group.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_enum_string.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_event.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group_base.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group_item.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_group_manager.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_item_attributes.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_item_hvqt.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_request_manager.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_base.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_factory.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_kind.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_type.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_server_types.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\frl_opc_util.cpp">
+      <Filter>src\opc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\address_space\frl_opc_addr_space_crawler.cpp">
+      <Filter>src\opc\address_space</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\address_space\frl_opc_address_space.cpp">
+      <Filter>src\opc\address_space</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\address_space\frl_opc_tag.cpp">
+      <Filter>src\opc\address_space</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_enum_item_attributes.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_async_io.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_browse.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_browse_server_address_space.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_common.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_group_state_mgt.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_deadband_mgt.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_io.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_mgt.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_item_properties.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_server.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\opc\impl\frl_opc_impl_sync_io.cpp">
+      <Filter>src\opc\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sys\frl_sys_util.cpp">
+      <Filter>src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\os\win32\registry\frl_registry_Key.cpp">
+      <Filter>src\os\win32\registry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\os\win32\registry\frl_registry_RootKey.cpp">
+      <Filter>src\os\win32\registry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\os\win32\registry\frl_registry_RootKeys.cpp">
+      <Filter>src\os\win32\registry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\os\win32\com\frl_os_win32_com_allocator.cpp">
+      <Filter>src\os\win32\com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\os\win32\com\frl_os_win32_com_variant.cpp">
+      <Filter>src\os\win32\com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\io\fs\frl_fs_fn_linux.cpp">
+      <Filter>src\io\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\io\fs\frl_fs_fn_win32.cpp">
+      <Filter>src\io\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\io\comm_ports\frl_comm_ports_serial.cpp">
+      <Filter>src\io\comm_ports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\io\comm_ports\frl_comm_ports_serial_fn_win32.cpp">
+      <Filter>src\io\comm_ports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\poor_xml\frl_poor_xml_document.cpp">
+      <Filter>src\poor_xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\poor_xml\frl_poor_xml_node.cpp">
+      <Filter>src\poor_xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\poor_xml\frl_poor_xml_parser.cpp">
+      <Filter>src\poor_xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\time\frl_time_sys_time.cpp">
+      <Filter>src\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\logging\frl_logging.cpp">
+      <Filter>src\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\logging\frl_logging_elements.cpp">
+      <Filter>src\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\logging\frl_logging_writers.cpp">
+      <Filter>src\logging</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\frl_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_empty_type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_exception.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_int_to_type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_io.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_lexical_cast.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_null_type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_opc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_select.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_singleton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_smart_ptr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_string.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_type_to_type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frl_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\stream_std\frl_fstream.h">
+      <Filter>include\stream_std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\stream_std\frl_ios.h">
+      <Filter>include\stream_std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\stream_std\frl_istream.h">
+      <Filter>include\stream_std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\stream_std\frl_ostream.h">
+      <Filter>include\stream_std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\stream_std\frl_sstream.h">
+      <Filter>include\stream_std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\stream_std\frl_streambuf.h">
+      <Filter>include\stream_std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\console_std\frl_iostream.h">
+      <Filter>include\console_std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_async_request.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_connection_point.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_connection_point_container.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_da_server.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_enum_connection_points.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_enum_group.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_enum_string.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_event.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group_base.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group_item.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_group_manager.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_item_attributes.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_item_hvqt.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_request_manager.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_serv_handle_counter.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_base.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_factory.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_kind.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_type.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_server_types.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\frl_opc_util.h">
+      <Filter>include\opc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\address_space\frl_opc_addr_space_crawler.h">
+      <Filter>include\opc\address_space</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\address_space\frl_opc_address_space.h">
+      <Filter>include\opc\address_space</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\address_space\frl_opc_tag.h">
+      <Filter>include\opc\address_space</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_enum_item_attributes.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_async_io.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_browse.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_browse_server_address_space.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_common.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_group_state_mgt.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_deadband_mgt.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_io.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_mgt.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_item_properties.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_server.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\opc\impl\frl_opc_impl_sync_io.h">
+      <Filter>include\opc\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sys\frl_sys_util.h">
+      <Filter>include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\os\win32\com\frl_os_win32_com_allocator.h">
+      <Filter>include\os\win32\com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\os\win32\com\frl_os_win32_com_uuidof.h">
+      <Filter>include\os\win32\com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\os\win32\com\frl_os_win32_com_variant.h">
+      <Filter>include\os\win32\com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\os\win32\registry\frl_registry_Key.h">
+      <Filter>include\os\win32\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\os\win32\registry\frl_registry_RootKey.h">
+      <Filter>include\os\win32\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\os\win32\registry\frl_registry_RootKeys.h">
+      <Filter>include\os\win32\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\fs\frl_fs_fn.h">
+      <Filter>include\io\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\comm_ports\frl_comm_ports_serial.h">
+      <Filter>include\io\comm_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\comm_ports\frl_comm_ports_serial_fh.h">
+      <Filter>include\io\comm_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\poor_xml\frl_poor_xml_document.h">
+      <Filter>include\poor_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\poor_xml\frl_poor_xml_node.h">
+      <Filter>include\poor_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\poor_xml\frl_poor_xml_parser.h">
+      <Filter>include\poor_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\time\frl_time_sys_time.h">
+      <Filter>include\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\logging\frl_logging.h">
+      <Filter>include\logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\logging\frl_logging_elements.h">
+      <Filter>include\logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\logging\frl_logging_writers.h">
+      <Filter>include\logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\smart_ptr\frl_com_ptr.h">
+      <Filter>include\smart_ptr</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
