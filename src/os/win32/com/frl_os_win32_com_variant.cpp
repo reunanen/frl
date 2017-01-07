@@ -494,8 +494,8 @@ std::vector<T> arrayToVector(VARIANT variant)
 	SafeArrayGetLBound(pSafeArray, 1, &lb);
 	SafeArrayGetUBound(pSafeArray, 1, &ub);
 
-	if (lb > ub) {
-		FRL_THROW( FRL_STR( "lower bound > upper bound." ) );
+	if (lb > ub + 1) {
+		FRL_THROW( FRL_STR( "lower bound > upper bound + 1." ) );
 	}
 
 	std::vector<T> vector(ub - lb + 1);
