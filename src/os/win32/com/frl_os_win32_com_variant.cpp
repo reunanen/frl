@@ -476,14 +476,54 @@ Variant::operator const VARIANT&() const
 	return value;
 }
 
+template <typename T>
+std::vector<T> arrayToVector(VARIANT variant)
+{
+	if ((variant.vt & VT_ARRAY) == 0) {
+		FRL_THROW( FRL_STR( "Expected an array." ) );
+	}
+
+	SAFEARRAY* pSafeArray = V_ARRAY(&variant);
+
+	const auto dimension = SafeArrayGetDim(pSafeArray);
+	if (dimension != 1) {
+		FRL_THROW( FRL_STR( "Unexpected dimension (only 1 is supported)." ) );
+	}
+
+	LONG lb, ub;
+	SafeArrayGetLBound(pSafeArray, 1, &lb);
+	SafeArrayGetUBound(pSafeArray, 1, &ub);
+
+	if (lb > ub + 1) {
+		FRL_THROW( FRL_STR( "lower bound > upper bound + 1." ) );
+	}
+
+	std::vector<T> vector(ub - lb + 1);
+
+	for (auto i = lb; i <= ub; ++i) {
+		T value;
+		HRESULT hr = SafeArrayGetElement(pSafeArray, &i, &value);
+		if (FAILED(hr)) {
+			FRL_THROW( FRL_STR( "SafeArrayGetElement failed." ) );
+		}
+		vector[i - lb] = value;
+	}
+
+	return vector;
+}
+
 bool Variant::isEqual( const VARIANT &val1, const VARIANT &val2 )
 {
 	if ( val1.vt != val2.vt )
 		return false;
 
-	if (val1.vt & VT_ARRAY)
-	{
-		FRL_THROW_S(); // TODO
+	if (val1.vt & VT_ARRAY) {
+		if (val1.vt & VT_R8) {
+			return arrayToVector<double>(val1) == arrayToVector<double>(val2);
+		}
+		else {
+			FRL_THROW( FRL_STR( "Only arrays of VT_R8 are supported at the moment." ) );
+		}
 	}
 
 	switch (val1.vt)
