@@ -42,12 +42,8 @@
     <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\..\output\frl_lib\</OutDir>
-    <IntDir>..\..\..\output\frl_lib\obj\$(Configuration)\obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)\..\..\output\frl_lib\</OutDir>
-    <IntDir>$(SolutionDir)\..\..\output\frl_lib\obj\$(Configuration)\obj\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <BuildLog>
@@ -66,9 +62,7 @@
       <CallingConvention>Cdecl</CallingConvention>
       <DisableSpecificWarnings>4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
-    <Lib>
-      <OutputFile>$(OutDir)frl_d.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <BuildLog>
@@ -82,9 +76,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat />
     </ClCompile>
-    <Lib>
-      <OutputFile>$(OutDir)frl.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\console_std\frl_iostream.cpp" />
