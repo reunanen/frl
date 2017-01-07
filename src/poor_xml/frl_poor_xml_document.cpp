@@ -119,7 +119,7 @@ void Document::loadFileToString( const String& file_name_, String &buffer_ )
 	while( in )
 	{
 		in.read( &buf[ 0 ], buffer_size );
-		buffer_.append( &buf[ 0 ], in.gcount() );
+		buffer_.append( &buf[ 0 ], static_cast<unsigned int>( in.gcount() ) );
 	}
 	in.close();
 }
