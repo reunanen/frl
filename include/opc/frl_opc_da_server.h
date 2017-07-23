@@ -19,7 +19,7 @@ public:
 	void registerServer();
 	void registerServer3();
 	void unregisterServer();
-	Bool init();
+	HRESULT init();
 };
 
 } // namespace opc

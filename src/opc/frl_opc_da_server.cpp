@@ -37,15 +37,14 @@ void DAServer::registerServer3()
 	ServerKind::registerServer( categories );
 }
 
-frl::Bool DAServer::init()
+HRESULT DAServer::init()
 {
 	HRESULT hResult = S_OK;
 	hResult = CoInitializeEx(NULL, COINIT_MULTITHREADED);
 	if (FAILED(hResult))
 	{
-		MessageBoxW( NULL, L"Error on CoInitializeEx",  L"Error!", MB_OK |MB_ICONSTOP );
 		isInit = False;
-		return frl::False;
+		return hResult;
 	}
 
 	factory.isOutProc( True );
@@ -57,13 +56,12 @@ frl::Bool DAServer::init()
 
 	if( FAILED(hResult) )
 	{
-		MessageBoxW( NULL, L"Error on CoRegistrerClassObject",  L"Error!", MB_OK |MB_ICONSTOP );
 		CoUninitialize();
 		isInit = False;
-		return False;
+		return hResult;
 	}			
 	isInit = True;
-	return True;
+	return hResult;
 }
 
 void DAServer::unregisterServer()
