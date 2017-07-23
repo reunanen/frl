@@ -85,7 +85,7 @@ const ServerType& ServerKind::getType()
 	return type;
 }
 
-void ServerKind::registrerServer( const std::vector<IID> &categories )
+void ServerKind::registerServer( const std::vector<IID> &categories )
 {
 	if( clsid.empty() || driverName.empty() || vendor.empty() || version.empty() || categories.empty() )
 		FRL_THROW( FRL_STR( "Invalid server attributes" ) );

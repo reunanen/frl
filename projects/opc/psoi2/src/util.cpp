@@ -10,7 +10,7 @@ void regServer()
 {
 	frl::opc::DAServer tmp( frl::opc::ServerTypes::localServer32 );
 	setServerInfo( tmp );
-	tmp.registrerServer3();
+	tmp.registerServer3();
 }
 
 void unregServer()

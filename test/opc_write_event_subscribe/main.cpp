@@ -108,7 +108,7 @@ int main( int argc, char *argv[] )
 	server.setDriverName( FRL_STR("SERVER_WRITE_EVENT_TEST") );
 	server.setDescription( FRL_STR("Test OPC server write event from Serg Baburin"));
 	server.setVersion( 0.1 );
-	server.registrerServer3();
+	server.registerServer3();
 	server.init();
 
 	for( ; ; )

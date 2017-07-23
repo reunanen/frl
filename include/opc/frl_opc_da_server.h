@@ -16,8 +16,8 @@ private:
 public:
 	DAServer( const ServerType& serverType );
 	~DAServer();
-	void registrerServer();
-	void registrerServer3();
+	void registerServer();
+	void registerServer3();
 	void unregisterServer();
 	Bool init();
 };

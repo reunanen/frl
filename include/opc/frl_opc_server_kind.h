@@ -21,7 +21,7 @@ private:
 	String version;
 	ServerType type;
 protected:
-	void registrerServer( const std::vector<IID> &categories );
+	void registerServer( const std::vector<IID> &categories );
 public:
 	ServerKind( const ServerType& serverType );
 	void setProgID( const String &newProgID );

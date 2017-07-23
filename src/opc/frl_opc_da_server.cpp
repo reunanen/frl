@@ -22,19 +22,19 @@ DAServer::~DAServer()
 	}
 }
 
-void DAServer::registrerServer()
+void DAServer::registerServer()
 {
 	std::vector< IID > categories;
 	categories.push_back( ::CATID_OPCDAServer20 );
-	ServerKind::registrerServer( categories );
+	ServerKind::registerServer( categories );
 }
 
-void DAServer::registrerServer3()
+void DAServer::registerServer3()
 {
 	std::vector< IID > categories;
 	categories.push_back( ::CATID_OPCDAServer20 );
 	categories.push_back( ::CATID_OPCDAServer30 );
-	ServerKind::registrerServer( categories );
+	ServerKind::registerServer( categories );
 }
 
 frl::Bool DAServer::init()
