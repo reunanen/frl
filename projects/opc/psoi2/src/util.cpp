@@ -8,14 +8,14 @@ namespace util
 
 void regServer()
 {
-	frl::opc::DAServer tmp( frl::opc::ServerTypes::localSever32 );
+	frl::opc::DAServer tmp( frl::opc::ServerTypes::localServer32 );
 	setServerInfo( tmp );
 	tmp.registrerServer3();
 }
 
 void unregServer()
 {
-	frl::opc::DAServer tmp( frl::opc::ServerTypes::localSever32 );
+	frl::opc::DAServer tmp( frl::opc::ServerTypes::localServer32 );
 	setServerInfo( tmp );
 	tmp.unregisterServer();
 }

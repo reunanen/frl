@@ -8,7 +8,7 @@ namespace frl{ namespace opc{
 
 struct ServerTypes
 {
-	static const ServerType localSever32;
+	static const ServerType localServer32;
 	static const ServerType inprocServer32;
 	static const ServerType inprocHandler32;
 };

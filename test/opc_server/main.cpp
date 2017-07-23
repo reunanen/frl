@@ -38,7 +38,7 @@ int main( int argc, char *argv[] )
 	tag->setCanonicalDataType( VT_BOOL );
 	tag->write( true );
 
-	opc::DAServer server( opc::ServerTypes::localSever32 );
+	opc::DAServer server( opc::ServerTypes::localServer32 );
 	server.setCLSID( FRL_STR("{251D3C74-535C-4ea4-A0FE-5FF3921DF3BB}") );
 	server.setVendor( FRL_STR("Serg Baburin") );
 	server.setDriverName( FRL_STR("SERVER_TEST") );

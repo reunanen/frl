@@ -4,7 +4,7 @@
 
 namespace frl{ namespace opc{
 
-const ServerType ServerTypes::localSever32( FRL_STR( "LocalServer32" ) );
+const ServerType ServerTypes::localServer32( FRL_STR( "LocalServer32" ) );
 const ServerType ServerTypes::inprocServer32( FRL_STR( "inprocServer32" ) );
 const ServerType ServerTypes::inprocHandler32( FRL_STR( "InprocHandler32" ) );
 

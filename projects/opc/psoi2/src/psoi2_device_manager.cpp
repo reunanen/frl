@@ -125,7 +125,7 @@ void DeviceManager::initializeAddressSpace()
 
 void DeviceManager::initializeDAServer()
 {
-	server = new frl::opc::DAServer( frl::opc::ServerTypes::localSever32 );
+	server = new frl::opc::DAServer( frl::opc::ServerTypes::localServer32 );
 	util::setServerInfo( *server );
 	server->init();
 }

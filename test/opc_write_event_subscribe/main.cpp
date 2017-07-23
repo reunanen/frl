@@ -102,7 +102,7 @@ int main( int argc, char *argv[] )
 	tag->write( String( FRL_STR( "test string" ) ) );
 	tag->subscribeToOpcChange( boost::function< void( const frl::opc::address_space::Tag* const ) >( boost::bind( &functionCallBackTwo, _1 ) ) );
 
-	opc::DAServer server( opc::ServerTypes::localSever32 );
+	opc::DAServer server( opc::ServerTypes::localServer32 );
 	server.setCLSID( FRL_STR("{E712B16C-963C-4aac-AFF6-67CBBE658D9C}") );
 	server.setVendor( FRL_STR("Serg Baburin") );
 	server.setDriverName( FRL_STR("SERVER_WRITE_EVENT_TEST") );
