@@ -180,7 +180,7 @@ STDMETHODIMP OPCServer::AddGroup(
 	boost::mutex::scoped_lock guard( scopeGuard );
 	if( szName == NULL || wcslen( szName ) == 0 )
 	{
-		name = util::getUniqueName();
+		name = FRL_STR("Group_") + util::getUniqueName();
 	}
 	else
 	{

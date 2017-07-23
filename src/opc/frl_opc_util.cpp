@@ -23,7 +23,7 @@ frl::String getUniqueName()
 	static unsigned long counter = 0;
 	++counter;
 	stream_std::StringStream ss;
-	ss << counter <<  FRL_STR("_Name_FRL_LIB");
+	ss << counter;
 	return ss.str();
 }
 
