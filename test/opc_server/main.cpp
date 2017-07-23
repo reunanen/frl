@@ -1,4 +1,5 @@
 #include <tchar.h>
+#include <comdef.h>
 #include "frl_opc.h"
 
 int main( int argc, char *argv[] )
@@ -45,7 +46,11 @@ int main( int argc, char *argv[] )
 	server.setDescription( FRL_STR("Test OPC server from Serg Baburin"));
 	server.setVersion( 0.1 );
 	server.registerServer3();
-	server.init();
+	const HRESULT result = server.init();
+	if (FAILED(result)) {
+		MessageBoxW(NULL, _com_error(result).ErrorMessage(), L"Error on init", MB_OK | MB_ICONSTOP);
+		return 1;
+	}
 
 	for( ; ; )
 		::Sleep(100);
